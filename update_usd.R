@@ -1,6 +1,3 @@
-library(dplyr)
-library(data.table)
-
 update_usd <- function(if_update = FALSE) {
     thepage = readLines('http://www.boc.cn/sourcedb/whpj/')
     anchor <- grep("美元", thepage)[length(grep("美元", thepage))]
@@ -24,6 +21,3 @@ update_usd <- function(if_update = FALSE) {
         return(list(latest = current, all = update))
     } else return(current)
 }
-
-
-update_usd(if_update = TRUE)
