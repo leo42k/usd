@@ -27,4 +27,3 @@ update_usd <- function(if_update = FALSE) {
 
 
 update_usd(if_update = TRUE)
-
