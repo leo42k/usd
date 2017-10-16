@@ -15,3 +15,4 @@ plot(x, y)
 # lines(x, lo.model$fitted, col = "blue")
 kern <- ksmooth(x %>% as.numeric(), y, kernel = "normal", bandwidth = 20000)
 lines(kern, col = "blue")
+
